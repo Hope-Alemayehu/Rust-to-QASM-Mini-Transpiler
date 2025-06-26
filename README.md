@@ -57,7 +57,7 @@ measure q[1] -> c[1];
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/rust-to-qasm.git
+git clone https://github.com/Hope-Alemayehu/rust-to-qasm.git
 cd rust-to-qasm
 
 # Build the project
