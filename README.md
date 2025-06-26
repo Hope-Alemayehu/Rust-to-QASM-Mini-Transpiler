@@ -49,35 +49,29 @@ measure q[1] -> c[1];
 
 ## Getting Started
 
-### Prerequisites
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/rust-to-qasm-transpiler.git
+   cd rust-to-qasm-transpiler
+   ```
 
-- [Rust](https://www.rust-lang.org/tools/install) (edition 2024)
+2. Build the project:
+   ```bash
+   cargo build
+   ```
 
-### Building
+3. Run the example:
+   ```bash
+   cargo run
+   ```
 
-```bash
-# Clone the repository
-git clone https://github.com/Hope-Alemayehu/rust-to-qasm.git
-cd rust-to-qasm
+4. Check the generated `output.qasm` file.
 
-# Build the project
-cargo build --release
-```
+## Blog Post
 
-### Running
+Read more about the implementation details and my experience building this transpiler in my Medium article:
 
-1. Create an input file with quantum instructions (see `examples/bell.txt`)
-2. Run the transpiler:
-
-```bash
-# Run with default input (hardcoded in main.rs)
-cargo run
-
-# Or pipe your input file to the program
-cat examples/bell.txt | cargo run
-```
-
-The output will be written to `output.qasm` in the project root.
+[Building a Simple Rust to QASM Transpiler](https://medium.com/@hopesp444/building-a-simple-rust-to-qasm-transpiler-18e6f95db1c4)
 
 ## Project Structure
 
@@ -101,6 +95,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License 
+
 ## Acknowledgements
 
 - OpenQASM for the quantum assembly standard
